@@ -1,3 +1,12 @@
+/*Basic*/
+// Stack
+//var stack = Stack<Int>()
+//stack.push(1)
+//stack.push(2)
+//stack.push(3)
+//print(stack.debugDescription)
+
+
 /*Add Two Numbers Linked List*/
  
 //var l1 = ListNode(2)

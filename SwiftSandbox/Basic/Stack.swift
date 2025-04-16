@@ -1,6 +1,5 @@
 public struct Stack<T> {
     private var storage: [T] = []
-    public init() {}
     
     public mutating func push(_ element: T) {
         storage.append(element)
@@ -20,7 +19,10 @@ public struct Stack<T> {
     }
 }
 
-extension Stack {
+extension Stack: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: T...) {
+        self.storage = elements
+    }
     public var debugDescription: String {
         """
         ----top----

@@ -1,10 +1,7 @@
 /*Basic*/
 // Stack
-//var stack = Stack<Int>()
-//stack.push(1)
-//stack.push(2)
-//stack.push(3)
-//print(stack.debugDescription)
+var stack: Stack = [1.0, 2.0, 3.0]
+print(stack.debugDescription)
 
 
 /*Add Two Numbers Linked List*/

@@ -1,7 +1,11 @@
 /*Basic*/
+
+// LinkedList
+let linkedList = LinkedList<Int>()
+
 // Stack
-var stack = Stack<String>(fromString: "(hello world)")
-print(stack.isBalanceParentheses)
+//var stack = Stack<String>(fromString: "(hello world)")
+//print(stack.isBalanceParentheses)
 
 /*Add Two Numbers Linked List*/
  

@@ -1,8 +1,7 @@
 /*Basic*/
 // Stack
-var stack: Stack = [1.0, 2.0, 3.0]
-print(stack.debugDescription)
-
+var stack = Stack<String>(fromString: "(hello world)")
+print(stack.isBalanceParentheses)
 
 /*Add Two Numbers Linked List*/
  

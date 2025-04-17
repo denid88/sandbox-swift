@@ -23,6 +23,11 @@ extension Stack: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: T...) {
         self.storage = elements
     }
+    
+    public init(fromString elements: String) where T == String {
+        self.storage = elements.map { String($0) }
+    }
+        
     public var debugDescription: String {
         """
         ----top----
@@ -30,6 +35,24 @@ extension Stack: ExpressibleByArrayLiteral {
                                                         "\n"))
         -----------}
         """
+    }
+}
+
+extension Stack where T == String {
+    public var isBalanceParentheses: Bool {
+        var balance = 0
+        
+        for e in storage {
+            if e == "(" {
+                balance += 1
+            }
+            
+            if e == ")" {
+                balance -= 1
+            }
+        }
+        
+        return balance == 0
     }
 }
     
